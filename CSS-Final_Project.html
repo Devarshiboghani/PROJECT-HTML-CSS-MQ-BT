@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Netflix home page</title>
+         <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+          body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #0f171e;
+  color: white;
+}
+
+.b1 {
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  opacity: 0.7;
+  background-image: linear-gradient(black 1%, transparent 70%), url(CSS-Final-Project-Images.html/background.jpg);
+}
+.navbar {
+  padding-left: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f171e;
+  padding: 10px 20px;
+  top: 0;
+}
+
+.logo1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.language select {
+  background: #0f171e;
+  color: white;
+  border: 1px solid #333;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.sign {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.Get-Started {
+  cursor: pointer;
+}
+.data {
+  margin-top: 150px;
+}
+.data h1 {
+  font-weight: 900;
+}
+.data input {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+
+.data button {
+    padding: 5px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+}
+
+.logo {
+  position: absolute;
+  float: right;
+  width: 2%;
+}
+
+   .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  gap: 10px;
+   }
+   .image-container img.logo {
+    position: relative;
+    bottom: -160px;  
+    right: 50px; 
+    width: 40px; 
+    height: auto;
+  }
+.image img{
+  position: relative;
+  width: 200px;
+  height: 230px;
+  margin: 2px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+    
+.container {
+    display: flex;
+     justify-content: center;
+    flex-wrap: nowrap;
+    gap: 25px;
+}
+
+h2 {
+  margin: 20px;
+  margin-left: 150px;
+}
+.card{
+    width: 250px; 
+    min-height: 350px;
+    background: linear-gradient(#080334, lab(11.27% 39.33 -52.62));
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+     position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card h3 {
+ font-size: 30px;
+    color: white;
+    margin: 2px;
+    padding-left: 2px;
+    padding: 0px;
+}
+
+.card p {
+  padding: 12px;
+   font-weight: bold;
+   font-size: 20px;
+    color: gray;
+}
+
+.icon {
+   position: absolute;
+  float: right;
+  width: 5%;
+}
+
+.card img.icon {
+   position: absolute;
+    bottom: 10px;  
+    right: 10px; 
+    width: 60px; 
+    height: auto;
+}
+
+.paragraph {
+  display: flex;
+  width: 1400px;
+  background-color: gray;
+  color: white;
+}
+.paragraph p {
+  margin: 7px;
+  padding: 5px;
+}
+
+.paragraph button {
+  font-size: 20px;
+   background-color: gray;
+  color: white;
+  border: none;
+}
+
+.faq {
+  background: #000;
+  padding: 50px;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 25px;
+  margin: 20px;
+  text-align: left;
+}
+
+.faq-item {
+  margin: 10px auto;
+  max-width: 1400px;
+  text-align: left;
+}
+
+.faq-question {
+  width: 100%;
+  background: #303030;
+  color: white;
+  border: none;
+  padding: 20px;
+  text-align: left;
+  font-size: 1.2rem;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.site-footer {
+    background: #141414; 
+    color: #b3b3b3;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .footer-note {
+    margin: 10px 0 20px 0;
+    color: #737373;
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 18px 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr)); 
+    gap: 10px 24px;
+  }
+  .footer-links li { margin: 0; }
+  .footer-links a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 13px;
+    display: inline-block;
+    transition: color 0.15s ease;
+  }
+  .footer-links a:hover,
+  .footer-links a:focus {
+    color: #fff;
+    outline: none;
+    text-decoration: underline;
+  }
+
+  .footer-lang {
+    margin-top: 20px;
+    color: #737373;
+    font-size: 13px;
+  }
+
+    </style>
+    </head>
+    <body>
+
+<div class="b1">
+       <!-- Navbar -->
+      <header class="navbar">
+      <div class="logo1">NETFLIX</div>
+     <div class="right-section">
+     <div class="language">
+      <select>
+        <option>English</option>
+        <option>हिंदी</option>
+        <option>தமிழ்</option>
+        <option>తెలుగు</option>
+        <option>Bahasa Indonesia</option>
+        <option>Bahasa Melayu</option>
+        <option>Dansk</option>
+        <option>Deutsch</option>
+        <option>Italiano</option>
+        <option>Magyar</option>
+        <option>Nederlands</option>
+        <option>Norsk</option>
+      </select>
+      <button class="sign">Sign in</button>
+    </div>
+     </div>
+</header>
+
+<div class="data">
+    <center>
+    <h1>Unlimited movies,<br> TV shows and more</h1>
+    <h4>Stars at ₹149. Cancle at any time.</h4>
+    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+    <label></label>
+    <input type="email" placeholder="Email address">
+    <button class="Get-Started">Get Started ></button>
+</center>
+</div>
+</div>
+
+<div class="image">
+<h2>Trending Now</h2>
+<div class="images">
+<div class="image-container">
+  <img src="CSS-Final-Project-Images.html/movie1.jpg" alt="background">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Classic_alphabet_numbers_1_at_coloring-pages-for-kids-boys-dotcom.svg" class="logo">
+</div>
+
+<div class="image-container">
+  <img src="CSS-Final-Project-Images.html/movie2.jpg" alt="background">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Classic_alphabet_numbers_2_at_coloring-pages-for-kids-boys-dotcom.svg" class="logo">
+  </div>
+
+<div class="image-container">
+  <img src="CSS-Final-Project-Images.html/movie3.jpg" alt="background">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMk75nqWYsYsGPwNO49SBqh35ta9VDML8UFQ&s" class="logo">
+</div>
+
+<div class="image-container">
+  <img src="CSS-Final-Project-Images.html/movie4.jpg" alt="background">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Classic_alphabet_numbers_4_at_coloring-pages-for-kids-boys-dotcom.svg" class="logo">
+  </div>
+
+  <div class="image-container">
+  <img src="CSS-Final-Project-Images.html/movie5.jpg" alt="background">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Classic_alphabet_numbers_5_at_coloring-pages-for-kids-boys-dotcom.svg" class="logo">
+  </div>
+</div>
+</div>
+</div>
+
+<h2>More reasons to join</h2>
+ <div class="container">
+
+<div class="card">
+    <h3>Enjoy on your TV</h3>
+    <p>Watch on smart TVs, PlayStation, Xbox, Chromecast,
+    Apple TV, Blu-ray players and more.</p>
+    <img src="CSS-Final-Project-Images.html/msg.jpg" class="icon">
+</div>
+
+<div class="card">
+    <h3>Download your shows to watch offline</h3>
+    <p>Save your favourites easily and always have something to watch.</p>
+    <img src="CSS-Final-Project-Images.html/Download.jpg" class="icon">
+</div>
+
+<div class="card">
+    <h3>Watch everywhere</h3>
+    <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+    <img src="CSS-Final-Project-Images.html/celebrate.jpg" class="icon">
+  </div>
+
+<div class="card">
+    <h3>Create profiles for kids</h3>
+    <p>Send kids on adventures with their favourite charcters in a space
+       made just for them free with your membership</p>
+       <img src="CSS-Final-Project-Images.html/msg.jpg" class="icon">
+</div>
+ </div>
+
+ <section class="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      <span>What is Netflix?</span>
+      <span class="faq-icon">+</span>
+    </button>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      <span>How much does Netflix cost?</span>
+      <span class="faq-icon">+</span>
+    </button>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      <span>Where can I watch?</span>
+      <span class="faq-icon">+</span>
+    </button>
+  </div>
+
+   <div class="faq-item">
+    <button class="faq-question">
+      <span>How do I cancle?</span>
+      <span class="faq-icon">+</span>
+    </button>
+  </div>
+
+   <div class="faq-item">
+    <button class="faq-question">
+      <span>What can I watch on Netflix?</span>
+      <span class="faq-icon">+</span>
+    </button>
+  </div>
+
+   <div class="faq-item">
+    <button class="faq-question">
+      <span>Is Netflix good for kids?</span>
+      <span class="faq-icon">+</span>
+    </button>
+  </div>
+</section>
+
+<div class="data">
+  <center>
+   <p>Ready to watch? Enter your email to create or restart your membership.</p>
+    <label></label>
+    <input type="email" placeholder="Email address">
+    <button class="Get-Started">Get Started ></button> 
+  </center>
+</div>
+
+<!-- Footer: paste near </body> -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-note">Questions? Call 000-800-040-1843</p>
+
+    <ul class="footer-links">
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Help Center</a></li>
+      <li><a href="#">Account</a></li>
+      <li><a href="#">Media Center</a></li>
+      <li><a href="#">Investor Relations</a></li>
+      <li><a href="#">Jobs</a></li>
+      <li><a href="#">Ways to Watch</a></li>
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Cookie Preferences</a></li>
+      <li><a href="#">Corporate Information</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Speed Test</a></li>
+      <li><a href="#">legal Notices</a><li>
+      <li><a href="#">Only on Netflix</a></li>
+      <li><a href="#"></a></li>
+    </ul>
+
+      <div class="language">
+      <select>
+        <option>English</option>
+        <option>हिंदी</option>
+        <option>தமிழ்</option>
+        <option>తెలుగు</option>
+        <option>Bahasa Indonesia</option>
+        <option>Bahasa Melayu</option>
+        <option>Dansk</option>
+        <option>Deutsch</option>
+        <option>Italiano</option>
+        <option>Magyar</option>
+        <option>Nederlands</option>
+        <option>Norsk</option>
+      </select>
+      </div>
+
+    <div class="footer-lang">Netflix India</div>
+  </div>
+</footer>
+
+</div>
+    </body>
+</html>

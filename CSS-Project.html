@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>E-Grocery Super Market</title>
+        
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            border: black;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            border: 5px solid #100d0d;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .main-heading {
+            padding: 10px;
+            background-color:rgb(221, 219, 219) ;
+        }
+        .main-heading p{
+            color: gray;
+            margin-bottom: 6px;
+        }
+        .search {
+            width: 230px;
+            padding: 8px;
+            margin-top: 2px;
+            border-radius: 5px;
+            border: none;
+        }
+        .main-heading img {
+            background-position: top right;
+            width: 150px;
+            height: 150px;
+            position: relative;
+            left: 1000px;
+            top: -40px;
+        }
+
+        .product {
+            display: flex;
+            padding: 15px;
+        }
+        .product select {
+            width: 80px;
+            padding: 5px;
+            margin: 15px;
+            margin-top: 5px;
+            margin-bottom: 0px;
+            position: relative;
+            left: 800px;
+            border-radius: 5px;
+            border: gray;
+            color: gray;
+        }
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card{
+ width: 260px; 
+    min-height: 330px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+    text-align: left; 
+      position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card {
+    width: 100%;
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+     position: relative;
+}
+
+.product-card img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.badge {
+  position: absolute;
+  top: 5px;
+  float: left;
+  left: 5px;
+  padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+}
+
+/* Sale badge */
+.badge.sale {
+  background: red;
+}
+
+/* Discount badge */
+.badge.discount {
+  background: green;
+   left: 5px;
+    top: 25px;
+}
+
+.card-header{
+    position: relative;
+    bottom: 0px;
+    padding: 0px;
+    margin: 1px;
+}
+.card-header h4{
+    font-size: 15px;
+    color: gray;
+}
+.card-header p{
+    font-weight: bold;
+    padding: 0px 0px;
+    margin: 1px;
+}
+.star {
+    padding: 0px 1px;
+    margin: 1px;
+    margin-bottom: 8px;
+}
+.price {
+    padding: auto;
+     margin: 2px;
+     margin-top: 1px;
+    font-size: 16px;
+    color: #565050e8;
+}
+
+.price big {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+} 
+.old-price {
+    text-decoration: line-through;
+    color: #5a5959d6;
+    font-weight: normal;
+    margin-left: 10px;
+}
+.add {
+    position: absolute;
+    margin-top: 235px;
+    margin-left: 140px;
+   width: 80px;
+    padding: 8px 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(73, 215, 73);
+    color: white;
+    cursor: pointer;
+}
+.add:hover {
+  background-color: #218838;
+}
+
+        </style>
+    </head>
+    <body>
+            
+        <div class="main-heading">
+            <h3>E-Grocery Super Market</h3>
+            <p>Whatover the occasion, we have got you covered.</p>
+            <input type="text" name="fullname" placeholder="Search E-Grocery Super Market 🔍" class="search">
+           <img src="CSS-Images.html/shopping.jpg">
+        </div>
+
+        <div class="product">
+            <p><strong>26</strong> Products found</p> 
+              <select>
+                    <option value="">30</option>
+                    <option value="31">31</option> 
+            </select>
+
+              <select>
+                <option value="">Sort by: Featured</option>
+            <option value="Filter">Filter</option> 
+            </select>
+         </div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+    <div class="product-card">
+         <span class="badge sale">Sale</span>
+  <span class="badge discount">10% Off</span>
+            <img src="CSS-Images.html/bhujia-sev.jpg" alt="Sample Image" class="product-img">
+    </div>
+    <div class="card-header">
+        <h4>Snack & Munchies</h4>
+            <p>Haldirams sev bhujia</p>
+    </div>
+    <div class="star">
+         <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i><font color="gray">4.3(4)</font>
+    </div>
+    <div class="price">
+      <p><big>$21.6</big><span class="old-price">$24</span></p> 
+    </div>
+    <button class="add">+ Add</button>
+    </div>
+
+      <div class="card">
+    <div class="product-card">
+            <img src="CSS-Images.html/biskut.jpg" alt="Sample Image">
+    </div>
+    <div class="card-header">
+        <h4>Bakery & Biscuits</h4>
+        <p>NutriChoice Digestive</p>
+    </div>
+    <div class="star">
+         <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i><font color="gray">4.3(4)</font>
+    </div>
+    <div class="price">
+      <p><big>$24</big><span class="old-price">$24</span></p> 
+    </div>
+    <button class="add">+ Add</button>
+      </div>
+
+       <div class="card">
+    <div class="product-card">
+        <span class="badge sale">Buy 1 Get $4.00 Off</span>
+            <img src="CSS-Images.html/5star.jpg" alt="Sample Image">
+    </div>
+    <div class="card-header">
+        <h4>Bakery & Biscuits</h4>
+        <p>Cadbury 5 Star Chocolate</p>
+    </div>
+    <div class="star">
+         <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i><font color="gray">4.3(4)</font>
+    </div>
+    <div class="price">
+      <p><big>$35</big><span class="old-price">$35</span></p> 
+    </div>
+    <button class="add">+ Add</button>
+      </div>
+
+       <div class="card">
+    <div class="product-card">
+         <span class="badge sale">Hot</span>
+  <span class="badge discount">40% Off</span>
+            <img src="CSS-Images.html/wafers.jpg" alt="Sample Image">
+    </div>
+    <div class="card-header">
+        <h4>Snack & Munchies</h4>
+        <p>Onion Flavour Potato</p>
+    </div>
+    <div class="star">
+         <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i><font color="gray">4.3(4)</font>
+    </div>
+    <div class="price">
+      <p><big>$3</big><span class="old-price">$5</span></p> 
+    </div>
+    <button class="add">+ Add</button>
+      </div>
+
+</div>
+       
+ <div class="container">
+            <div class="card">
+    <div class="product-card">
+         <span class="badge discount">25% Off</span>
+            <img src="CSS-Images.html/popcorn.jpg" alt="Sample Image">
+    </div>
+    <div class="card-header">
+        <h4>Instant Food</h4>
+        <p>Salted instant Popcorn</p>
+    </div>
+    <div class="star">
+         <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i><font color="gray">4.3(4)</font>
+    </div>
+    <div class="price">
+      <p><big>$11.7</big><span class="old-price">$18</span></p> 
+    </div>
+    <button class="add">+ Add</button>
+            </div>
+
+      <div class="card">
+    <div class="product-card">
+        <span class="badge sale">Buy 1 Get $4.00 Off</span>
+            <img src="CSS-Images.html/5star.jpg" alt="Sample Image">
+    </div>
+    <div class="card-header">
+        <h4>Bakery & Biscuits</h4>
+        <p>Cadbury 5 Star Chocolate</p>
+    </div>
+    <div class="star">
+         <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i><font color="gray">4.3(4)</font>
+    </div>
+    <div class="price">
+      <p><big>$35</big><span class="old-price">$35</span></p> 
+    </div>
+    <button class="add">+ Add</button>
+      </div>
+
+       <div class="card">
+    <div class="product-card">
+         <span class="badge sale">Sale</span>
+  <span class="badge discount">10% Off</span>
+            <img src="CSS-Images.html/bhujia-sev.jpg" alt="Sample Image">
+    </div>
+    <div class="card-header">
+        <h4>Snack & Munchies</h4>
+        <p>Haldirams Sev Bhujia</p>
+    </div>
+    <div class="star">
+         <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i><font color="gray">4.3(4)</font>
+    </div>
+    <div class="price">
+      <p><big>$21.6</big><span class="old-price">$24</span></p> 
+    </div>
+    <button class="add">+ Add</button>
+      </div>
+
+       <div class="card">
+    <div class="product-card">
+         <span class="badge discount">40% Off</span>
+            <img src="CSS-Images.html/blueberry.jpg" alt="Sample Image">
+    </div>
+    <div class="card-header">
+        <h4>Dairy, Bread & Eggs</h4>
+        <p>Blueberry Greek Yogurt</p>
+    </div>
+    <div class="star">
+         <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i><font color="gray">4.3(4)</font>
+    </div>
+    <div class="price">
+      <p><big>$14.4</big><span class="old-price">$24</span></p> 
+    </div>
+    <button class="add">+ Add</button>
+      </div>
+</div>
+       
+
+
+<div class="container">
+            <div class="card">
+    <div class="product-card">
+            <img src="CSS-Images.html/5star.jpg" alt="Sample Image">
+    </div>
+     <div class="card-header">
+        <h4>Dairy, Bread & Eggs</h4>
+        <p>Blueberry Greek Yogurt</p>
+    </div>
+    <div class="star">
+         <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i><font color="gray">4.3(4)</font>
+    </div>
+    <div class="price">
+      <p><big>$14.4</big><span class="old-price">$24</span></p> 
+    </div>
+    <button class="add">+ Add</button>
+      </div>
+
+       <div class="card">
+    <div class="product-card">
+         <span class="badge sale">Hot</span>
+  <span class="badge discount">40% Off</span>
+            <img src="CSS-Images.html/wafers.jpg" alt="Sample Image">
+    </div>
+    <div class="card-header">
+        <h4>Snack & Munchies</h4>
+        <p>Onion Flavour Potato</p>
+    </div>
+    <div class="star">
+         <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i><font color="gray">4.3(4)</font>
+    </div>
+    <div class="price">
+      <p><big>$3</big><span class="old-price">$5</span></p> 
+    </div>
+    <button class="add">+ Add</button>
+      </div>
+      
+       <div class="card">
+    <div class="product-card">
+            <img src="CSS-Images.html/biskut.jpg" alt="Sample Image">
+    </div>
+    <div class="card-header">
+        <h4>Bakery & Biscuits</h4>
+        <p>NutriChoice Digestive</p>
+    </div>
+    <div class="star">
+         <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i><font color="gray">4.3(4)</font>
+    </div>
+    <div class="price">
+      <p><big>$24</big><span class="old-price">$24</span></p> 
+    </div>
+    <button class="add">+ Add</button>
+      </div>
+
+<div class="card">
+    <div class="product-card">
+         <span class="badge discount">15% Off</span>
+            <img src="CSS-Images.html/5star.jpg" alt="Sample Image">
+    </div>
+     <div class="card-header">
+        <h4>Dairy, Bread & Eggs</h4>
+        <p>Blueberry Greek Yogurt</p>
+    </div>
+    <div class="star">
+         <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i><font color="gray">4.3(4)</font>
+    </div>
+    <div class="price">
+      <p><big>$14.4</big><span class="old-price">$24</span></p> 
+    </div>
+    <button class="add">+ Add</button>
+      </div>
+</div>
+
+    </body>
+</html>

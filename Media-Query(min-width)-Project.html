@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coffee Website with Responsive</title>
+
+     <!-- Icon Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+
+        <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: rgba(165, 42, 42, 0.605);
+        }
+          body {
+            font-family: Arial, sans-serif;
+            border: 30px solid rgba(165, 42, 42, 0.605);
+            padding: 20px;
+            background-color:  #d7d2a6e1;
+         }
+        
+         .navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+         }
+        .navbar img.logo {
+            width: 120px;
+            height: 100px;
+            opacity: 0.8;
+         }
+         .navbar nav {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: end;
+            color: black;
+            cursor: pointer;
+         }
+          .navbar a {
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+          }
+          .navbar a:hover {
+            color: rgb(171, 137, 93);
+          }
+         .search {
+            color: black;
+            border-radius: 4px;
+         }
+        .b1 {
+            margin-top: -50px;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-image: linear-gradient(to right, #000 30%, transparent 58%), url(Media-Query-Project-Images.html/coffee-background.jpg) ;
+            background-position: right-top;
+        }
+
+        .heading {
+            position: relative;
+            margin-left: 50px;
+            margin-top: 40px;
+            color: white;
+        }
+        .heading p {
+             width: 100%;
+             padding-top: 150px;
+             margin-top: 100px;
+             font-size: 40px;
+             font-family: Perpetua;
+             color: white;
+        }
+        .heading h1 {
+               width: 100%;
+              margin-top: 10px;
+              font-size: 40px;
+              color:  #d7d2a6;
+        }
+        .shop {
+              margin-top: 20px;
+              margin-bottom: 200px;
+              padding: 6px;
+              border-radius: 10px;
+              font-weight: bold;
+        }
+        .shop:hover {
+              transform: scale(1.1);
+              cursor: pointer;
+        }
+
+        .top {
+              margin-top: 60px;
+        }
+        .top p {
+              margin-top: 15px;
+              margin-bottom: 20px;
+        }   
+   
+        .category { 
+            display: grid;
+            justify-content: center;
+            flex-direction: row;
+            gap: 10px;
+        }
+        .images:hover {     
+           transform:scale(1.1);
+        }
+        .images {
+           width: 100%;
+           height: 250px;
+            flex: 1 1 30%;   /* each card takes ~30% width, grows/shrinks */
+           flex-direction: row; 
+           border: 2px solid #ccc;     
+           border-radius: 15px;
+           box-sizing: border-box;
+           align-items: center;
+           position: relative;
+           text-align: center;
+           box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+           transition: all 0.3s ease;
+        }
+        .product {
+           width: 100%;
+           align-items: center;
+        }
+        .product img {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        .p {
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            top: 80px;
+            left: 100px;
+        }
+        .view{
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            top: 120px;
+            left: 110px;
+        }
+        p {
+            margin-top: 10px;
+        }
+
+        .milk {
+             margin-top: 100px;
+        }
+        .milk p {
+             margin-bottom: 20px;
+         }
+        
+.container {
+    display: grid;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    overflow-x: auto;
+}
+  
+.card {
+    width: 350px; 
+    height: 320px;
+    flex: 1 1 30%;    /* each card takes ~30% width, grows/shrinks */
+    flex-direction: row; 
+    border: 2px solid #ccc; 
+    background-color:  #c6c198e1;
+    border-radius: 15px;
+    box-sizing: border-box;
+    align-items: center; 
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.product-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.product-card img{
+    width: 100%;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.badge {
+   position: absolute;
+   top: 5px;
+   float: left;
+   left: 5px;
+   padding: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: white;
+    color: gray;
+}
+.card-header h4{
+    margin-top: 20px;
+    font-size: 15px;
+    color: black;
+}
+.price {
+    padding: auto;
+     margin: 2px;
+     margin-top: 16px;
+     margin-left: -100px;
+    font-size: 16px;
+    color: black;
+}
+.buy {
+    position: absolute;
+    top: 270px;
+    left: 200px;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.buy:hover {
+    padding: 8px 13px;
+     transform: translateY(-5px);
+}
+.blogs {
+    margin-top: 80px;
+}
+.blogs p {
+    margin-bottom: 20px;
+}
+       
+.latest {
+    display: grid;
+     justify-content: center;
+     gap: 5px;
+     flex-direction: row;
+     flex-wrap: wrap;
+}
+.coffee:hover {
+     transform: translateY(-5px);
+}
+.coffee {
+    width: 100%;
+    height: 430px;
+    flex: 1 1 30%;   /* each card takes ~30% width, grows/shrinks */
+    flex-direction: column; 
+    background-color:  #c6c198e1;
+    border: 2px solid #ccc;     
+    border-radius: 15px;
+    box-sizing: border-box;
+    align-items: center; 
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+.coffee img{
+    margin: 15px;
+    width: 90%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.coffee h3 {
+    margin-left: -165px;
+    margin-top: 20px;
+}
+.coffee p {
+    width: 350px;
+    text-align: start;
+    margin-left: 15px;
+}
+        
+        .footer {
+            margin-top: 50px;
+            background-color: black;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .contain {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .footer-content {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section {
+             text-align: left;
+            margin: 30px;
+        }
+        .footer-section h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: white;
+        }
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            font-size: 15px;
+            margin: 8px 0;
+        }
+
+        .footer-section a {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+       
+           .social-footer {
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            gap: 15px;
+            background-color: #0c0c0c;
+        }
+        .social-footer a {
+            color: #bcb1b1;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        .social-footer a:hover {
+            color: #d2691e; 
+        }
+        
+        .foot {
+            background-color: rgba(182, 88, 88, 0.592);
+        }
+        .foot nav {
+            display: grid;
+            gap: 10px;
+            padding: 8px;
+        }
+        .foot nav a{
+              color: white;
+              text-decoration: none;
+        }
+       .foot nav a:hover{
+        cursor: pointer;
+        color: antiquewhite;
+       }
+      
+        /* SM: 576px+ */
+        @media (min-width: 576px) {
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+         /* MD: 768px+ */
+        @media (min-width: 768px) {
+             .category {
+                grid-template-columns: repeat(2, 1fr);
+            }
+             .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+             .latest {
+                grid-template-columns: repeat(2, 1fr);
+            }
+              .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+             }
+               .foot nav{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .foot a{
+                margin-left: 30px;
+                text-align: start;
+            }
+        }
+
+          /* LG: 992px+ */
+        @media (min-width: 992px) {
+             .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+              .footer-content {
+                grid-template-columns: repeat(3, 1fr);
+             }
+            .foot nav{
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* XL: 1200+ */
+          @media (min-width: 1200px) {
+            .navbar {
+                display: flex;
+            }
+            .navbar img.logo {
+                width: 100px;
+                height: 70px;
+            }
+            .navbar nav {
+                margin-top: 20px;
+                display: flex;
+                gap: 40px;
+            }
+            .navbar nav a {
+                font-size: 20px;
+            }
+            .b1 {
+                margin-top: -62px;
+            }
+              .category {
+                grid-template-columns: repeat(3, 1fr);
+            }
+             .container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+             .latest {
+                grid-template-columns: repeat(3, 1fr);
+            }
+             .footer-content {
+                grid-template-columns: repeat(4, 1fr);
+            }
+              .foot nav{
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="navbar">
+                <div class="logo1">
+                    <img src="Media-Query-Project-Images.html/coffee-logo.jpg" class="logo">
+            </div>
+            <div class="home">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Menu</a>
+                <a href="#">Blog</a>
+                <a href="#">Media</a>
+                <a href="#">Contact</a>
+            <button class="search">
+                <input type="text" placeholder="🔍">
+            </button>
+            </nav>
+            </div>
+            </div>
+
+            <div class="b1">
+                <div class="heading">
+                <p>FRESHLY ROSTED</p>
+                <h1>COFFEE</h1>
+                <button class="shop">Shop now</button>
+                </div>
+            </div>
+
+            <div class="top">
+                <center>
+                    <h1>TOP CATEGORIES</h1>
+                    <p>Explore The Recent Most Bought Drinks This Week</P>
+                </center>
+                <div class="category">
+
+                    <div class="images">
+                        <div class="product">
+                            <span class="p">Coffee Mocha</span>
+                            <span class="view">View More</span>
+                             <img src="Media-Query-Project-Images.html/coffee1.jpg" alt=""> 
+                   </div>
+                </div>
+                   
+
+                 <div class="images">
+                     <div class="product">
+                        <span class="p">Expressa Americano</span>
+                        <span class="view">View More</span>
+                    <img src="Media-Query-Project-Images.html/coffee2.jpg" alt="">
+                 </div>
+              </div>
+
+              <div class="images">
+                 <div class="product">
+                    <span class="p">Cappuccino</span>
+                    <span class="view">View More</span>
+                    <img src="Media-Query-Project-Images.html/coffee3.jpg" alt=""> 
+                 </div>
+            </div>
+
+          </div>
+        </div>
+
+            <div class="milk">
+                <center>
+                    <h1>TOP MILK SHAKES</h1>
+                    <p>Explore The Recent Most Bought Shakes This Week</p>
+                </center>
+                <div class="container">
+                    <div class="card">
+                        <div class="product-card">
+                        <span class="badge">👍30 likes</span>
+                    <img src="Media-Query-Project-Images.html/milk-shake1.jpg" alt="">
+                    </div>
+                    <div class="card-header">
+                        <h4>Mocha Shake</h4>
+                    </div>
+                    <div class="price">$20.00</div>
+                    <div class="buy">Buy Now</div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="product-card">
+                        <span class="badge">👍30 likes</span>
+                    <img src="Media-Query-Project-Images.html/milk-shake2.jpg" alt="">
+                    </div>
+                    <div class="card-header">
+                        <h4>Lovender Shake</h4>
+                    </div>
+                    <div class="price">$20.00</div>
+                    <div class="buy">Buy Now</div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="product-card">
+                        <span class="badge">👍30 likes</span>
+                    <img src="Media-Query-Project-Images.html/milk-shake3.jpg" alt="">
+                        </div>
+                    <div class="card-header">
+                        <h4>Caramel Shake</h4>
+                    </div>
+                    <div class="price">$20.00</div>
+                    <div class="buy">Buy Now</div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="product-card">
+                        <span class="badge">👍30likes</span>
+                    <img src="Media-Query-Project-Images.html/milk-shake4.jpg" alt="">
+                        </div>
+                    <div class="card-header">
+                        <h4>Mocha Shake</h4>
+                    </div>
+                    <div class="price">$20.00</div>
+                    <div class="buy">Buy Now</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blogs">
+                 <center>
+                    <h1>LATEST BLOGS</h1>
+                    <p>Explore The Recent Most Bought Shakes This Week</p>
+                </center>
+                 <div class="latest">
+                    <div class="coffee">
+                    <img src="Media-Query-Project-Images.html/coffee-connoissour1.jpg" alt="">
+                    <h3>Coffee Connoissour</h3>
+                    <p>Coffee is one of the most popular beverages in the world, enjoyed by millions 
+                        every day. It is made from rosted coffee beans, which are the seeds of the
+                        Coffee plant.
+                    </p>
+                    </div>
+
+                     <div class="coffee">
+                    <img src="Media-Query-Project-Images.html/coffee-connoissour2.jpg" alt="">
+                    <h3>Coffee Connoissour</h3>
+                    <p>Coffee is one of the most popular beverages in the world, enjoyed by millions 
+                        every day. It is made from rosted coffee beans, which are the seeds of the
+                        Coffee plant.
+                    </p>
+                    </div>
+
+                     <div class="coffee">
+                    <img src="Media-Query-Project-Images.html/coffee-connoissour3.jpg" alt="">
+                    <h3>Coffee Connoissour</h3>
+                    <p>Coffee is one of the most popular beverages in the world, enjoyed by millions 
+                        every day. It is made from rosted coffee beans, which are the seeds of the
+                        Coffee plant.
+                    </p>
+                    </div>
+                 </div>
+            </div>
+               
+            <div class="footer">
+                <div class="contain">
+                    <div class="footer-content">
+
+                        <div class="footer-section">
+                            <h3>Products</h3>
+                            <ul>
+                                <li><a href="#">Shows</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-section">
+                            <h3>Category</h3>
+                            <ul>
+                                <li><a href="#">Men</a></li>
+                                <li><a href="#">New in</a></li>
+                                <li><a href="#">Weekly Pick</a></li>
+                            </ul>
+                        </div>
+
+                         <div class="footer-section">
+                            <h3>Company Info</h3>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Payment Options</a></li>
+                                <li><a href="#">Track Order</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Vouchers</a></li>
+                                <li><a href="#">Size Choice</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-section">
+                            <h3>Follow us</h3>
+                             <ul>
+                                <footer class="social-footer">
+                                      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                                      <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                               </footer>
+                            </ul>
+                        </div>
+                    </div>
+
+                    </div>
+
+                    <div class="foot">
+                        <nav>
+                            <a href="#">Data Settings</a>
+                            <a href="#">Cookie Settings</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms And Conditions</a>
+                            <a href="#">Imprint</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.custom-nav {
+   background-color: white;
+  padding: 12px 0px;
+}
+
+.navbar-brand {
+ font-weight: bold;
+  font-size: 14px;
+}
+.navbar-nav .nav-link {
+  padding: 10px 15px;
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+.nav-link {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+   font-size: 15px;
+ padding: 10px 15px;
+  display: block;
+}
+
+ .nav-item a:hover{
+        color: #fcb900;
+         border-radius: 30px;
+ }
+
+.center-menu {
+  gap: 10px;
+}
+
+.right-menu {
+  gap: 15px;
+}
+
+.cart-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* BANNER */
+.blog-banner{
+  background:url("IMAGES-FCSTORE.jpg/banner-blog.jpg") center/cover no-repeat;
+  height:260px;
+  display:flex;
+  align-items:center;
+}
+.banner-text{
+  margin-left: 48%;
+  color:#fff;
+}
+.banner-text h1{
+  letter-spacing:2px;
+}
+
+/* SIDEBAR */
+.side-title{
+  color:#f5a623;
+  margin-bottom:15px;
+}
+.category-list{
+  list-style:none;
+  padding:0;
+}
+.category-list li{
+  padding:8px 0;
+  border-bottom:1px solid #eee;
+  font-size:14px;
+}
+.category-list li:hover {
+  color: orange;
+  cursor: pointer;
+   transition: all 0.4s ease;
+}
+/* PROMO */
+.promo{
+  position:relative;
+  margin-top:30px;
+}
+.promo img:hover {
+  opacity: 0.8;
+}
+
+.promo span{
+  position:absolute;
+  bottom:20px;
+  left:20px;
+  color:#fff;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+/* BLOG CARD */
+.blog-card{
+  background:#fff;
+  margin-top: 20px;
+}
+.blog-img{
+  position:relative;
+}
+.blog-img img{
+  width:100%;
+  height: 250px;
+}
+
+.date{
+  position:absolute;
+  top:10px;
+  left:-20px;
+  background:#fff;
+  padding:8px 10px;
+  font-weight:bold;
+  color:#f5a623;
+}
+.date span{
+  font-size:12px;
+  color:#777;
+}
+.blog-card h5{
+  margin:15px 0 10px;
+  font-weight: 700;
+}
+.blog-card h5:hover {
+  color: orange;
+  cursor: pointer;
+   transition: all 0.4s ease;
+}
+.blog-card p{
+  font-size:14px;
+  color:#666;
+}
+.blog-card a{
+  color:#f5a623;
+  font-size:12px;
+  letter-spacing:1px;
+  text-decoration:none;
+  font-weight: 700;
+}
+.blog-card a:hover {
+  cursor: pointer;
+  color: #111;
+}
+/* PAGINATION */
+.pagination-box{
+  text-align:center;
+  margin-top:40px;
+}
+.pagination-box span{
+  margin:0 8px;
+  cursor:pointer;
+}
+.pagination-box .active{
+  color:#f5a623;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .blog-banner{
+    height:180px;
+  }
+  .banner-text{
+    margin-left:20px;
+  }
+}
+
+.footer{
+  background:#111;
+  padding-top:60px;
+}
+.footer p {
+   color:#aaa;
+    font-size: 14px;
+}
+.footer-top h2{
+  color:#fff;
+  letter-spacing:2px;
+}
+
+.footer-top h2 span{
+  color:#f4a52c;
+}
+
+.footer-top p{
+  max-width:700px;
+  margin:20px auto;
+  line-height:26px;
+}
+
+.social-icons a{
+  color:#999;
+  margin:0 15px;
+  font-size:16px;
+  position:relative;
+}
+
+.social-icons a::after{
+  content:'';
+  width:20px;
+  height:2px;
+  background:#f4a52c;
+  position:absolute;
+  left:50%;
+  bottom:-10px;
+  transform:translateX(-50%);
+}
+
+.footer hr{
+  border-color:#222;
+  margin:50px 0;
+}
+
+.footer-middle h5{
+  color:#fff;
+  margin-bottom:20px;
+  position:relative;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+.footer-middle h5::after{
+  content:'';
+  width:30px;
+  height:2px;
+  background:#f4a52c;
+  position:absolute;
+  left:0;
+  bottom:-8px;
+}
+
+.footer-middle ul{
+  list-style:none;
+  padding:0;
+}
+
+.footer-middle ul li{
+  margin-bottom:10px;
+  color:#aaa;
+  cursor:pointer;
+  font-size: 14px;
+}
+
+.footer-bottom{
+  border-top:1px solid #222;
+  padding:20px 30px;
+  margin-top:40px;
+}
+
+.footer-bottom p{
+  margin:0;
+  font-size:14px;
+}
+
+.payments img{
+  max-height:30px;
+}
+
+@media(max-width:768px){
+  .footer-top p{
+    padding:0 15px;
+  }
+  .footer-bottom{
+    text-align:center;
+  }
+  .payments{
+    margin-top:10px;
+  }
+}

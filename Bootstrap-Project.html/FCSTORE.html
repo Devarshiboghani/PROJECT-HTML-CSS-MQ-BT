@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - sw fcstore</title>
+
+    <link href="FCSTORE.css" rel="stylesheet">
+
+      <!-- Icon Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" >
+
+</head>
+<body>
+    
+  <nav class="navbar navbar-expand-lg fixed-top custom-nav">
+  <div class="container d-flex align-items-center">
+
+    <!-- LEFT : Logo -->
+    <a class="navbar-brand" href="#">
+       <img src="https://demo1.wpthemego.com/themes/sw_fcstore/wp-content/themes/fcstore/assets/img/logo-default.png" alt="logo">
+    </a>
+
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- CENTER + RIGHT -->
+    <div class="collapse navbar-collapse" id="navMenu">
+
+      <!-- CENTER MENU -->
+      <ul class="navbar-nav mx-auto center-menu">
+        <li class="nav-item"><a class="nav-link" href="FCSTORE.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="FCSTORE-SHOP.html">SHOP</a></li>
+        <li class="nav-item"><a class="nav-link" href="FCSTORE-BLOG.html">BLOG</a></li>
+        <li class="nav-item"><a class="nav-link" href="FCSTORE-PAGES.html">PAGES</a></li>
+        <li class="nav-item"><a class="nav-link" href="FCSTORE-PORTFOLIO.html">PORTFOLIO</a></li>
+      </ul>
+
+      <!-- RIGHT ICONS -->
+      <ul class="navbar-nav right-menu">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </li>
+
+        <li class="nav-item">
+          <button class="btn cart-btn position-relative">
+            🛒
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+              0
+            </span>
+          </button>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            ☰
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">My Account</a></li>
+            <li><a class="dropdown-item" href="#">Wishlist</a></li>
+              <li><a class="dropdown-item" href="#">Cart</a></li>
+               <li><a class="dropdown-item" href="#">Cheakout</a></li>
+            <li><a class="dropdown-item" href="#">Compare</a></li>
+             <li><a class="dropdown-item" href="#">Login</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="back-ground">
+  <div id="bgCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+  <div class="carousel-indicators">
+  <button type="button" data-bs-target="#bgCarousel" data-bs-slide-to="0" class="active"></button>
+  <button type="button" data-bs-target="#bgCarousel" data-bs-slide-to="1"></button>
+  <button type="button" data-bs-target="#bgCarousel" data-bs-slide-to="2"></button>
+</div>
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active bg-slide slide-1"></div>
+    <div class="carousel-item bg-slide slide-2"></div>
+    <div class="carousel-item bg-slide slide-3"></div>
+
+  </div>
+</div>
+</div>
+
+<section class="structured-product py-5">
+  <div class="container text-center">
+
+    <h2 class="title">STRUCTURED PRODUCT</h2>
+    <div class="divider"></div>
+        <img src="IMAGES-FCSTORE.jpg/big-shoes.png" class="img-fluid product-img" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="products py-5">
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="text-center mb-1">
+      <div class="tabs">
+        <span>BEST SELLER</span>
+        <span class="active">NEW ARRIVALS</span>
+        <span>SALE OFF</span>
+      </div>
+      <div class="divider"></div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="row g-4">
+
+      <!-- Product Card -->
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="product-card">
+          <div class="product-img">
+          <span class="badge-sale">SALE!</span>
+          <img src="IMAGES-FCSTORE.jpg/sp1.png" class="img-fluid">
+            <div class="hover-icons">
+        <a href="buy" class="btn-buy">BUY PRODUCT</a>
+        <a href="#" class="btn-like"><i class="fa-regular fa-heart" style="color: #fafafa;"></i></a>
+        <a href="#" class="btn-search"><i class="fa-solid fa-magnifying-glass" style="color: #f9fafa;"></i></a>
+        <a href="#" class="btn-arrow"><i class="fa-solid fa-arrow-right-arrow-left" style="color: #fcfcfd;"></i></a>
+      </div>
+          </div>
+        </div>
+        <div class="center">
+          <h6>Strip steak dolore</h6>
+          <div class="stars">★★★★★</div>
+          <div class="price">
+            <del>$70.00</del>
+          <span>$50.00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="product-card">
+          <div class="product-img">
+          <img src="IMAGES-FCSTORE.jpg/sp5.jpg" class="img-fluid">
+           <div class="hover-icons">
+        <a href="buy" class="btn-buy">BUY PRODUCT</a>
+        <a href="#" class="btn-like"><i class="fa-regular fa-heart" style="color: #fafafa;"></i></a>
+        <a href="#" class="btn-search"><i class="fa-solid fa-magnifying-glass" style="color: #f9fafa;"></i></a>
+        <a href="#" class="btn-arrow"><i class="fa-solid fa-arrow-right-arrow-left" style="color: #fcfcfd;"></i></a>
+      </div>
+          </div>
+        </div>
+        <div class="center">
+          <h6>Asics Gel Lyte-V Roses</h6>
+          <div class="stars">★★★★★</div>
+          <div class="price">
+            <span>$136.00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="product-card">
+            <div class="product-img">
+          <img src="IMAGES-FCSTORE.jpg/sp5.jpg" class="img-fluid">
+          <div class="hover-icons">
+        <a href="buy" class="btn-buy">BUY PRODUCT</a>
+        <a href="#" class="btn-like"><i class="fa-regular fa-heart" style="color: #fafafa;"></i></a>
+        <a href="#" class="btn-search"><i class="fa-solid fa-magnifying-glass" style="color: #f9fafa;"></i></a>
+        <a href="#" class="btn-arrow"><i class="fa-solid fa-arrow-right-arrow-left" style="color: #fcfcfd;"></i></a>
+      </div>
+          </div>
+          </div>
+        <div class="center">
+          <h6>Venison meat</h6>
+          <div class="stars">★★★★★</div>
+          <div class="price">
+            <span>$99.00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="product-card">
+          <div class="product-img">
+          <span class="badge-sale">SALE!</span>
+          <img src="IMAGES-FCSTORE.jpg/sp3.jpg" class="img-fluid">
+          <div class="hover-icons">
+        <a href="buy" class="btn-buy">BUY PRODUCT</a>
+        <a href="#" class="btn-like"><i class="fa-regular fa-heart" style="color: #fafafa;"></i></a>
+        <a href="#" class="btn-search"><i class="fa-solid fa-magnifying-glass" style="color: #f9fafa;"></i></a>
+        <a href="#" class="btn-arrow"><i class="fa-solid fa-arrow-right-arrow-left" style="color: #fcfcfd;"></i></a>
+      </div>
+          </div>
+          </div>
+        <div class="center">
+          <h6>Ipsum eu</h6>
+          <div class="stars">★★★★★</div>
+          <div class="price">
+            <del>$110.00</del>
+            <span>$100.00</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+     <!-- Product Grid -->
+    <div class="row g-4">
+
+      <!-- Product Card -->
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="product-card">
+          <div class="product-img">
+          <span class="badge-sale">SALE!</span>
+          <img src="IMAGES-FCSTORE.jpg/sp2.jpg" class="img-fluid">
+           <div class="hover-icons">
+        <a href="buy" class="btn-buy">BUY PRODUCT</a>
+        <a href="#" class="btn-like"><i class="fa-regular fa-heart" style="color: #fafafa;"></i></a>
+        <a href="#" class="btn-search"><i class="fa-solid fa-magnifying-glass" style="color: #f9fafa;"></i></a>
+        <a href="#" class="btn-arrow"><i class="fa-solid fa-arrow-right-arrow-left" style="color: #fcfcfd;"></i></a>
+      </div>
+          </div>
+           </div>
+        <div class="center">
+          <h6>Chuck pariatur</h6>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="product-card">
+           <div class="product-img">
+          <img src="IMAGES-FCSTORE.jpg/sp6.jpg" class="img-fluid">
+         <div class="hover-icons">
+        <a href="buy" class="btn-buy">BUY PRODUCT</a>
+        <a href="#" class="btn-like"><i class="fa-regular fa-heart" style="color: #fafafa;"></i></a>
+        <a href="#" class="btn-search"><i class="fa-solid fa-magnifying-glass" style="color: #f9fafa;"></i></a>
+        <a href="#" class="btn-arrow"><i class="fa-solid fa-arrow-right-arrow-left" style="color: #fcfcfd;"></i></a>
+      </div>
+          </div>
+           </div>
+        <div class="center">
+          <h6>Culpa minim</h6>
+          <div class="stars">★★★★★</div>
+          <div class="price">
+             <del>$66.00</del>
+            <span>$45.00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="product-card">
+           <div class="product-img">
+          <img src="IMAGES-FCSTORE.jpg/sp7.jpg" class="img-fluid">
+           <div class="hover-icons">
+        <a href="buy" class="btn-buy">BUY PRODUCT</a>
+        <a href="#" class="btn-like"><i class="fa-regular fa-heart" style="color: #fafafa;"></i></a>
+        <a href="#" class="btn-search"><i class="fa-solid fa-magnifying-glass" style="color: #f9fafa;"></i></a>
+        <a href="#" class="btn-arrow"><i class="fa-solid fa-arrow-right-arrow-left" style="color: #fcfcfd;"></i></a>
+      </div>
+          </div>
+           </div>
+        <div class="center">
+          <h6>Swine ham</h6>
+          <div class="stars">★★★★★</div>
+          <div class="price">
+            <span>$70.00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="product-card">
+           <div class="product-img">
+          <span class="badge-sale">SALE!</span>
+          <img src="IMAGES-FCSTORE.jpg/sp2.jpg" class="img-fluid">
+            <div class="hover-icons">
+        <a href="buy" class="btn-buy">BUY PRODUCT</a>
+        <a href="#" class="btn-like"><i class="fa-regular fa-heart" style="color: #fafafa;"></i></a>
+        <a href="#" class="btn-search"><i class="fa-solid fa-magnifying-glass" style="color: #f9fafa;"></i></a>
+        <a href="#" class="btn-arrow"><i class="fa-solid fa-arrow-right-arrow-left" style="color: #fcfcfd;"></i></a>
+      </div>
+          </div>
+           </div>
+        <div class="center">
+          <h6>Rump jowl</h6>
+          <div class="stars">★★★★★</div>
+          <div class="price">
+            <del>$69.00</del>
+            <span>$49.00</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Button -->
+    <div class="text-center mt-5">
+      <button class="btn-show">SHOW ALL</button>
+    </div>
+
+  </div>
+</section>
+
+    <section class="deal-section">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-6 deal-content">
+        <h2>Culpa minim</h2>
+
+        <div class="rating">
+          ★★★★★
+        </div>
+
+        <div class="price">
+          <span class="old">$66.00</span>
+          <span class="new">$45.00</span>
+        </div>
+
+        <p>
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis.
+        </p>
+
+        <div class="actions">
+          <button class="btn-cart">ADD TO CART</button>
+          <button class="icon-btn"><i class="far fa-heart"></i></button>
+          <button class="icon-btn"><i class="fas fa-search"></i></button>
+          <button class="icon-btn"><i class="fas fa-exchange-alt"></i></button>
+        </div>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="col-lg-6 deal-image text-center">
+        <img src="IMAGES-FCSTORE.jpg/sp6.jpg" class="img-fluid" alt="shoe">
+
+        <!-- TIMER -->
+        <div class="timer">
+          <div><h3>194</h3><span>DAYS</span></div>
+          <div><h3>18</h3><span>HOURS</span></div>
+          <div><h3>26</h3><span>MINS</span></div>
+          <div><h3>47</h3><span>SECS</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="info-section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="info-box">
+          <i class="fas fa-anchor"></i>
+          <h5>RETURN & EXCHANGE</h5>
+          <p>Committed to return the money in 30 days</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="info-box">
+          <i class="fas fa-gift"></i>
+          <h5>RECIEVE GIFT CARD</h5>
+          <p>Receive gift all over order $50</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="info-box">
+          <i class="fas fa-globe"></i>
+          <h5>FREE SHIP ALL ORDER</h5>
+          <p>Worldwide Shipping</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="container py-5">
+
+  <!-- TITLE -->
+  <div class="section-title">
+    <h2>LATEST BLOG</h2>
+    <div class="divider"></div>
+
+  </div>
+
+  <!-- BLOG ROW -->
+  <div class="row">
+
+    <div class="col-md-6">
+      <div class="blog-item">
+        <img src="IMAGES-FCSTORE.jpg/blog1.png">
+        <div>
+          <div class="blog-date">26 <span>/ FEB</span></div>
+          <div class="blog-content">
+            <h4>Lorem ipsum dolor sit amet</h4>
+            <p>Capicola reprehenderit sirloin excepteur. Bacon</p>
+            <a href="#" class="read-more">READ MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="blog-item">
+        <img src="IMAGES-FCSTORE.jpg/blog2.png">
+        <div>
+          <div class="blog-date">26 <span>/ FEB</span></div>
+          <div class="blog-content">
+            <h4>Asics Gel Lyte III Future Camo</h4>
+            <p>Capicola reprehenderit sirloin excepteur. Bacon</p>
+            <a href="#" class="read-more">READ MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- NEWSLETTER -->
+  <div class="newsletter">
+    <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+    <p>Subscribe to our email list and never miss a thing from FCSTORE blog.</p>
+
+    <input type="email" placeholder="Enter Your Email"><br>
+    <button>SUBSCRIBE</button>
+  </div>
+
+</section>
+
+    <footer class="footer">
+  <!-- Top Footer -->
+  <div class="footer-top text-center">
+    <a class="navbar-brand" href="#">
+       <img src="https://demo1.wpthemego.com/themes/sw_fcstore/wp-content/themes/fcstore/assets/img/logo-default.png" alt="logo">
+    </a>
+    <p>
+      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut<br>
+      odit aut fugit, sed quia consequuntur magni dolores.
+    </p>
+
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Middle Footer -->
+  <div class="container footer-middle">
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-6">
+        <h5>CONTACT US</h5>
+        <p>Address : No 40 Baria Street 133/2 NewYork City, NY, United States</p>
+        <p>Email : info.contact@gmail.com</p>
+        <p>Phone : (00) 123 456 789</p>
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h5>MY ACCOUNT</h5>
+        <ul>
+          <li>My Account</li>
+          <li>Checkout</li>
+          <li>Register</li>
+          <li>Login</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h5>INFORMATION</h5>
+        <ul>
+          <li>About us</li>
+          <li>Contact us</li>
+          <li>Terms of Use</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h5>QUICK LINK</h5>
+        <ul>
+          <li>New User</li>
+          <li>Help Center</li>
+          <li>Report Spam</li>
+          <li>FAQs</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5>WHY CHOOSE US</h5>
+        <ul>
+          <li>Product Recall</li>
+          <li>Gift Vouchers</li>
+          <li>Returns & Exchanges</li>
+          <li>Shipping Options</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
+    <p>FCSTORE © 2025 WordPress Theme Demo Store. All Rights Reserved.</p>
+    <div class="payments">
+      <img src="IMAGES-FCSTORE.jpg/footer-botton.png" alt="">
+    </div>
+  </div>
+</footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
